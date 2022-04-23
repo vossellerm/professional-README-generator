@@ -76,7 +76,7 @@ const init = () => {
       const markdownPageContent = generateMarkdown(answers);
 
       // write file
-      fs.writeFile("sampleREADME.md", markdownPageContent, (err) =>
+      fs.writeFile("SampleREADME.md", markdownPageContent, (err) =>
         err
           ? console.log(err)
           : console.log("Succesfully created sampleREADME.md!")

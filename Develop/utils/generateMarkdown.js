@@ -1,4 +1,5 @@
 // TODO: Add code to generate markdown for README given a data object parameter containing the user input.
+
 function generateMarkdown({
   title,
   description,
@@ -11,11 +12,11 @@ function generateMarkdown({
   githubLink,
   email,
 }) {
-  return `# ${title}`
+  return `# ${title}
 
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+    ${license}
 
-`## Description
+## Description
 
 ${description}
 
@@ -54,8 +55,7 @@ Contact me if you have any questions.
 
 Email: [${email}](mailto:${email})
 
-GitHub: [${username}](${githubLink})
-`;
+GitHub: [${username}](${githubLink})`;
 }
 
 module.exports = generateMarkdown;
