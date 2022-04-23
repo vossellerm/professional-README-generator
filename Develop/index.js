@@ -8,22 +8,36 @@ const generateMarkdown = require("./utils/generateMarkdown");
 // TODO: Write code to get user input, generate markdown, and save it to a file.
 const init = () => {
   // inquirer
-  inquirer.prompt([
-    // description
-    {},
-    // installation instructions
-    {},
-    // usage info
-    {},
-    // contribution guidelines
-    {},
-    // test instructions
-    {},
-    // license selection
-    {},
-    // GitHub username and link
-    {},
-    // email address
-    {},
-  ]);
+  inquirer
+    .prompt([
+      // description
+      {},
+      // installation instructions
+      {},
+      // usage info
+      {},
+      // contribution guidelines
+      {},
+      // test instructions
+      {},
+      // license selection
+      {},
+      // GitHub username and link
+      {},
+      // email address
+      {},
+    ])
+    //   populate answers in generateMarkdown
+    .then((answers) => {
+      const markdownPageContent = generateMarkdown(answers);
+
+      // write file
+      fs.writeFile("sampleREADME.md", markdownPageContent, (err) =>
+        err
+          ? console.log(err)
+          : console.log("Succesfully created sampleREADME.md!")
+      );
+    });
 };
+
+init();
