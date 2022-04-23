@@ -13,6 +13,12 @@ const init = () => {
       // description
       {
         type: "input",
+        name: "title",
+        message: "What is the title of your project?",
+      },
+      // description
+      {
+        type: "input",
         name: "description",
         message: "Describe your project",
       },
