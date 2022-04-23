@@ -6,6 +6,6 @@ This projects produces a pre-formatted README to describe a project for users ba
 
 ## Test
 
-Watch a video demonstration of this program:
+Watch a video demonstration of this program [here](./Screen%20Recording%202022-04-22%20at%208.22.03%20PM.mov)
 
 ![](./Develop/Screen%20Shot%202022-04-22%20at%208.12.49%20PM.png)
