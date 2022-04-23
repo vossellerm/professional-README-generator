@@ -17,11 +17,7 @@ This projects produces a pre-formatted README to describe a project for users ba
 
 ## Installation
 
-Install NPM Inquirer:
-
-1. open terminal
-1. input <code>npm init -y</code>
-1. input <code>npm i inquirer</code>
+Install NPM Inquirer
 
 ## Usage
 
