@@ -11,10 +11,11 @@ function generateMarkdown({
   username,
   githubLink,
   email,
+  licenseTitle,
 }) {
   return `# ${title}
 
-    ${license}
+${license}
 
 ## Description
 
@@ -43,7 +44,7 @@ ${contribution}
 
 ## License
 
-${license}
+${licenseTitle}
 
 ## Tests
 
